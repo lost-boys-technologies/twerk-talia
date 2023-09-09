@@ -26,7 +26,8 @@ If you are developing a production application, we recommend updating the config
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-## proposed folder/file structure (as of Sep 9, 2023)
+## proposed folder/file structure (as of Sep 9, 2023) - Final Structure TBD
+```sh
 project-root/
 │
 ├── src/
@@ -34,7 +35,7 @@ project-root/
 │   │   ├── AnnouncementBar.tsx
 │   │   ├── TopNav.tsx
 │   │   ├── HeroSection.tsx
-│   │   ├── SocialMediaFeed.tsx
+│   │   ├── InstagramFeed.tsx
 │   │   └── Footer.tsx
 │   │
 │   ├── pages/
@@ -74,3 +75,4 @@ project-root/
 ├── tsconfig.node.json
 ├── vite.config.ts
 └── yarn.lock
+```
