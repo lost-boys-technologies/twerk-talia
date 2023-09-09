@@ -25,4 +25,52 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# twerk-talia
+
+## proposed folder/file structure (as of Sep 9, 2023)
+project-root/
+│
+├── src/
+│   ├── components/
+│   │   ├── AnnouncementBar.tsx
+│   │   ├── TopNav.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── SocialMediaFeed.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Schedule.tsx
+│   │   ├── Merchandise.tsx
+│   │   └── Events.tsx
+│   │
+│   ├── assets/
+│   │   ├── icons/
+│   │   └── images/
+│   │
+│   ├── styles/
+│   │   ├── App.css
+│   │   └── index.css
+│   │
+│   ├── types/
+│   │   ├── common.d.ts
+│   │   ├── componentTypes.ts
+│   │   └── apiTypes.ts
+│   │
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── server/
+│   └── server.js
+│
+├── public/
+│   └── index.html
+│
+├── .eslintrc.cjs
+├── .gitignore
+├── .nvmrc
+├── package.json
+├── README.md
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── yarn.lock
